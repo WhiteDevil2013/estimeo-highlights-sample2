@@ -38,14 +38,12 @@ const StartupCard = (props) => (
             avatar={props.avatar}
         />
         <CardMedia style={containerImgStyles}
-                   overlay={<CardTitle title={props.title}
-subtitle={props.subtitle} />}
+                   overlay={<CardTitle title={props.title} subtitle={props.subtitle} />}
         >
             <img src={props.img} alt="" />
         </CardMedia>
         <CardActions style={noContainerImgStyles}>
-            <Link as={`/s/${props._id}`}
-                  href={`/startup?id=${props._id}`} prefetch>
+            <Link as={`/s/${props._id}`} href={`/startup?id=${props._id}`} prefetch>
                 <a>
                     <FlatButton label="Voir"/>
                 </a>

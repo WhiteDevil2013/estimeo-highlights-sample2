@@ -28,6 +28,7 @@ const styles = {
 
 const HighlightGridList = (props) => (
 
+
     <div style={styles.root}>
         {props.highlights.map((high) => (
             <GridList
