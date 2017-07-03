@@ -17,6 +17,7 @@ describe('<Welcome />', () => {
         const wrapper = shallow(<Welcome title="Welcome !" msg="My Message"/>);
         expect(wrapper.find('p').text()).toEqual('My Message')
     })
+    
 
     it('contains one tag "<h1>"', () => {
         const wrapper = shallow(<Welcome title="Welcome !" msg="My Message"/>);
