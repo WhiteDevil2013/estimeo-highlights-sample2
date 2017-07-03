@@ -83,4 +83,15 @@ describe('<HighlightGrid />', () => {
     it('will success', () => {
         expect(false).toBe(false)
     })
+
+    it('3 GridList only', () => {
+        const wrapper = shallow(<HighlightGrid highlights={highlights}/>);
+        expect(wrapper.find("GridList").length).toBe(3);
+    })
+
+
+    it('3 GridList only', () => {
+        const wrapper = shallow(<HighlightGrid highlights={highlights}/>);
+        expect(wrapper.find("GridList").first().contains("cols=2"));
+    })
 })
