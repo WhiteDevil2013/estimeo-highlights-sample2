@@ -17,6 +17,8 @@ jobs:
                 command: |
                   if [ "${CIRCLE_BRANCH}" == "master" ]; then
                     git push heroku master
+                    heroku logs --tail
                     heroku npm run start deploy
+                    heroku logs --tail
                     heroku restart
                   fi
